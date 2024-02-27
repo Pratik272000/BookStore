@@ -15,4 +15,8 @@ public class BookService {
     public List<Book> getAllBooks() {
         return bookDao.findAll();
     }
+
+    public Book getBookByIsbn(String isbn) {
+        return bookDao.findByIsbn(isbn);
+    }
 }
